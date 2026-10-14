@@ -1,0 +1,24 @@
+# AI-Predictive-Maintenance-IoT Dependencies
+# Target Python Version: >=3.10,<3.12
+
+# Data Ingestion & Manipulation
+pandas>=2.0.0,<2.3.0
+numpy>=1.24.0,<2.0.0
+
+# Machine Learning & Modeling
+scikit-learn>=1.3.0,<1.5.0
+joblib>=1.3.0,<2.0.0
+
+# Visualization & Reporting
+matplotlib>=3.7.0,<3.11.0
+seaborn>=0.12.0,<0.14.0
+plotly>=5.15.0,<6.0.0
+
+# Interactive Dashboard & Telemetry App
+streamlit>=1.28.0,<2.0.0
+
+# Testing & Quality Assurance
+pytest>=7.4.0,<10.0.0
+
+# Interactive Analysis & Notebooks
+jupyter>=1.0.0,<2.0.0

@@ -1,0 +1,102 @@
+# ==============================================================================
+# .gitignore - AI-Predictive-Maintenance-IoT
+#
+# NOTE FOR DEVELOPERS:
+# Large data files, trained model binaries, and runtime execution logs are
+# excluded from version control to maintain a lightweight, clean repository.
+#
+# How to obtain dataset and regenerate artifacts:
+# 1. Dataset: Refer to data/README.md and docs/dataset_documentation.md for
+#    instructions on downloading the UCI AI4I 2020 Predictive Maintenance Dataset.
+#    Place the raw file into data/raw/ai4i2020.csv.
+# 2. Model Artifacts: Execute `python main.py --mode train` to run the end-to-end
+#    preprocessing and model training pipeline. Serialized pipelines (.joblib)
+#    will automatically be regenerated into models/.
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Environment Variables and Secrets
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.cert
+.streamlit/secrets.toml
+.streamlit/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Data Directories (Exclude raw and processed data; keep tracking .gitkeep and README.md)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Models (Exclude serialized binaries; preserve README.md)
+*.joblib
+models/*
+!models/README.md
+
+# Outputs (Exclude generated metrics, predictions, and logs; preserve directory tracking)
+outputs/metrics/*
+!outputs/metrics/.gitkeep
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+*.log
