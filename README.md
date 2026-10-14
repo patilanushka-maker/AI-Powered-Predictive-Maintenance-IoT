@@ -80,6 +80,10 @@ The visual assets directory (`images/`) stores application screenshots and archi
 ![Model Evaluation Benchmarks](images/charts/baseline_model_comparison.png)
 *Figure 4: Comparative evaluation of classification performance across tree ensembles and linear baselines on the held-out test split.*
 
+### Data Export and Architecture Specifications
+![Data Export and Architecture Specifications](images/dashboard/data_export_and_benchmarks.png)
+*Figure 5: Operational telemetry export tools and empirical validation metrics across evaluated model configurations.*
+
 ---
 
 ## Dataset and IoT Telemetry Channels
